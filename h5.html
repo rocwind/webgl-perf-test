@@ -11,11 +11,21 @@ html, body, canvas {
 canvas {
   width: 100%;
 }
+.board {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
     </style>
 
   </head>
   <body>
     <canvas></canvas>
+    <div class="board"></div>
     <script type="text/javascript" src="./dist/webgl-perf-test.js"></script>
     <script type="text/javascript" src="h5.js"></script>
   </body>
